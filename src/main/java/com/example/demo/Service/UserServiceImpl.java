@@ -1,8 +1,12 @@
-package com.example.demo;
+package com.example.demo.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import com.example.demo.Model.User;
+import com.example.demo.Repository.RoleRepository;
+import com.example.demo.Repository.UserRepository;
 
 import java.util.HashSet;
 

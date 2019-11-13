@@ -7,7 +7,7 @@
 <html lang="en">
   <head>
       <meta charset="utf-8">
-      <title>Se Connecter</title>
+      <title>Connection</title>
 
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/common.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 
     <div class="container">
       <form method="POST" action="${contextPath}/login" class="form-signin">
-        <h2 class="form-heading">Se connecter</h2>
+        <h2 class="form-heading">Connection</h2>
 
         <div class="form-group ${error != null ? 'has-error' : ''}">
             <span>${message}</span>

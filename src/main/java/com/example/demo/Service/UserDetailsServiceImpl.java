@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Service;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,6 +11,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.example.demo.Model.Role;
+import com.example.demo.Model.User;
+import com.example.demo.Repository.UserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService{

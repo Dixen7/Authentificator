@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "Size.userForm.password",
+    "type": "java.lang.String",
+    "description": "A description for 'Size.userForm.password'"
+  },
+  {
+    "name": "Duplicate.userForm.username",
+    "type": "java.lang.String",
+    "description": "A description for 'Duplicate.userForm.username'"
+  },
+  {
+    "name": "Diff.userForm.passwordConfirm",
+    "type": "java.lang.String",
+    "description": "A description for 'Diff.userForm.passwordConfirm'"
+  },
+  {
+    "name": "Size.userForm.username",
+    "type": "java.lang.String",
+    "description": "A description for 'Size.userForm.username'"
+  },
+  {
+    "name": "NotEmpty",
+    "type": "java.lang.String",
+    "description": "A description for 'NotEmpty'"
+  },
+  {
+    "name": "Duplicate.userForm.username",
+    "type": "java.lang.String",
+    "description": "A description for 'Duplicate.userForm.username'"
+  },
+  {
+    "name": "Duplicate.userForm.username",
+    "type": "java.lang.String",
+    "description": "A description for 'Duplicate.userForm.username'"
+  }
+]}

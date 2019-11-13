@@ -1,10 +1,13 @@
-package com.example.demo;
+package com.example.demo.Validator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
+
+import com.example.demo.Model.User;
+import com.example.demo.Service.UserService;
 
 @Component
 public class UserValidator implements Validator {
@@ -36,5 +39,19 @@ public class UserValidator implements Validator {
         if (!user.getPasswordConfirm().equals(user.getPassword())) {
             errors.rejectValue("passwordConfirm", "Diff.userForm.passwordConfirm");
         }
+        
+        if (!user.getEmail().equals(user.getEmailConfirm())) {
+            errors.rejectValue("emailConfirm", "Diff.userForm.emailConfirm");
+        }
+        
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "adresse", "NotEmpty");
+        
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "ville", "NotEmpty");
+        
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "codePostal", "NotEmpty");
+        
+//        if (user.getEmail())
+        
+        // INSERER MESSAGE ERREUR //
     }
 }

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.Service;
 
 public interface SecurityService {
     String findLoggedInUsername();

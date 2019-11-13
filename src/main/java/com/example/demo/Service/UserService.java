@@ -1,4 +1,6 @@
-package com.example.demo;
+package com.example.demo.Service;
+
+import com.example.demo.Model.User;
 
 public interface UserService {
     void save(User user);
