@@ -1,7 +1,11 @@
 package com.example.demo.Model;
 
 import javax.persistence.*;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.Set;
 
 @Entity
@@ -23,6 +27,7 @@ public class User {
     @Transient
     private String emailConfirm;
     
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dateNaissance;
     
     private String adresse;

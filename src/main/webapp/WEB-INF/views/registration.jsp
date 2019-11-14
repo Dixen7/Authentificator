@@ -63,7 +63,7 @@
 				<div class="form-group ${status.error ? 'has-error' : ''}">
 					<form:input type="date" path="dateNaissance" class="form-control"
 						placeholder="Entrez votre date de naissance"></form:input>
-					<form:errors path="passwordConfirm"></form:errors>
+					<form:errors path="dateNaissance"></form:errors>
 				</div>
 			</spring:bind>
 
@@ -79,7 +79,7 @@
 				<div class="form-group ${status.error ? 'has-error' : ''}">
 					<form:input type="text" path="adresseComplement" class="form-control"
 						placeholder="Complement d'adresse"></form:input>
-					<form:errors path="passwordConfirm"></form:errors>
+					
 				</div>
 			</spring:bind>
 
